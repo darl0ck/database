@@ -64,10 +64,13 @@ add [НомерЗаписи] int identity(1,1)
 primary key
 go
 alter table [dbo].[Заказано]
+<<<<<<< HEAD
 add constraint pk_zn
 primary key([НомерЗаписи])
 go
 alter table [dbo].[Заказано]
+=======
+>>>>>>> master
 add constraint fk_zn_za
 foreign key([КодЗаказа])
 references [dbo].[Заказы]([КодЗаказа])
